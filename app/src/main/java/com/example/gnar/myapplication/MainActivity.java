@@ -502,23 +502,23 @@ public class MainActivity extends AppCompatActivity {
 
 
         /*----------PIN PAD EVENT LISTENERS ------------------*/
-        btn01 = (Button) findViewById(R.id.btn01);
-        btn02 = (Button) findViewById(R.id.btn02);
-        btn03 = (Button) findViewById(R.id.btn03);
+        btn01 = findViewById(R.id.btn01);
+        btn02 = findViewById(R.id.btn02);
+        btn03 = findViewById(R.id.btn03);
 
-        btn04 = (Button) findViewById(R.id.btn04);
-        btn05 = (Button) findViewById(R.id.btn05);
-        btn06 = (Button) findViewById(R.id.btn06);
+        btn04 = findViewById(R.id.btn04);
+        btn05 = findViewById(R.id.btn05);
+        btn06 = findViewById(R.id.btn06);
 
-        btn07 = (Button) findViewById(R.id.btn07);
-        btn08 = (Button) findViewById(R.id.btn08);
-        btn09 = (Button) findViewById(R.id.btn09);
+        btn07 = findViewById(R.id.btn07);
+        btn08 = findViewById(R.id.btn08);
+        btn09 = findViewById(R.id.btn09);
 
-        btnStar = (Button) findViewById(R.id.btnStar);
-        btn00 = (Button) findViewById(R.id.btn00);
-        btnPound = (Button) findViewById(R.id.btnPound);
+        btnStar = findViewById(R.id.btnStar);
+        btn00 = findViewById(R.id.btn00);
+        btnPound = findViewById(R.id.btnPound);
 
-        btnG = (Button) findViewById(R.id.btnG);
+        btnG = findViewById(R.id.btnG);
 
 
         switchPIR = findViewById(R.id.switchPIR);
@@ -671,18 +671,18 @@ public class MainActivity extends AppCompatActivity {
         //btnOn = (Button) findViewById(R.id.btnOn);                  // button LED ON
         //btnOff = (Button) findViewById(R.id.btnOff);                // button LED OFF
         //txtArduino = (TextView) findViewById(R.id.txtArduino);      // for display the received data from the Arduino
-        txtAlarm = (TextView) findViewById(R.id.txtAlarm);
-        txtGarage = (TextView) findViewById(R.id.txtGarage);
+        txtAlarm = findViewById(R.id.txtAlarm);
+        txtGarage = findViewById(R.id.txtGarage);
         //txtDebug = (TextView) findViewById(R.id.txtDebug);
         //txtIndex = (TextView) findViewById(R.id.txtIndex);
-        txtHumidity = (TextView) findViewById(R.id.txtHumidity);
-        txtTemperature = (TextView) findViewById(R.id.txtTemperature);
+        txtHumidity = findViewById(R.id.txtHumidity);
+        txtTemperature = findViewById(R.id.txtTemperature);
 
 
-        switchSecurity = (SwitchCompat) findViewById(R.id.switchSecurity);
-        switchPIR = (SwitchCompat) findViewById(R.id.switchPIR);
-        switchLaser = (SwitchCompat) findViewById(R.id.switchLaser);
-        switchDoor = (SwitchCompat) findViewById(R.id.switchDoor);
+        switchSecurity = findViewById(R.id.switchSecurity);
+        switchPIR = findViewById(R.id.switchPIR);
+        switchLaser = findViewById(R.id.switchLaser);
+        switchDoor = findViewById(R.id.switchDoor);
 
         btAdapter = BluetoothAdapter.getDefaultAdapter();       // get Bluetooth adapter
         checkBTState();
@@ -694,15 +694,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private BluetoothSocket createBluetoothSocket(BluetoothDevice device) throws IOException {
-        if(Build.VERSION.SDK_INT >= 10){
-            try {
-                final Method  m = device.getClass().getMethod("createInsecureRfcommSocketToServiceRecord", new Class[] { UUID.class });
-                return (BluetoothSocket) m.invoke(device, MY_UUID);
-                //mConnectedThread.write("RE");
-            } catch (Exception e) {
-                Log.e(TAG, "Could not create Insecure RFComm Connection",e);
-            }
+        //if(Build.VERSION.SDK_INT >= 10){
+        try {
+            final Method  m = device.getClass().getMethod("createInsecureRfcommSocketToServiceRecord", UUID.class);
+            return (BluetoothSocket) m.invoke(device, MY_UUID);
+            //mConnectedThread.write("RE");
+        } catch (Exception e) {
+            Log.e(TAG, "Could not create Insecure RFComm Connection",e);
         }
+        //}
         return  device.createRfcommSocketToServiceRecord(MY_UUID);
     }
 
