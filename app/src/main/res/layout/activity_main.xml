@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/firstFloorProgressBars"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/colorPrimary"
+    android:columnCount="4">
+    
+
+    <TextView
+        android:layout_columnSpan="4"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_gravity="top"
+        android:id="@+id/secondFloor"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_margin="5dp"
+        android:text="@string/second_floor"
+        android:textColor="@android:color/white" />
+    
+    
+    
+    
+    <TextView
+        android:layout_columnSpan="1"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_gravity="top"
+        android:id="@+id/whiteOneProgressText"
+        android:layout_height="15dp"
+        android:layout_margin="5dp"
+        android:minWidth="60dp"
+        android:textColor="@android:color/white" />
+    <SeekBar
+        android:layout_width="250dp"
+        android:layout_columnSpan="3"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_gravity="top"
+        android:id="@+id/whiteOneBar"
+        android:layout_height="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:foregroundTintMode="multiply"
+        android:max="15"
+        android:minHeight="15dp"
+        android:progress="0"
+        android:progressTint="@android:color/white" />
+    <TextView
+        android:layout_columnSpan="1"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_gravity="top"
+        android:id="@+id/blueOneProgressText"
+        android:layout_height="15dp"
+        android:layout_margin="5dp"
+        android:textColor="@android:color/white" />
+    <SeekBar
+        android:layout_width="250dp"
+        android:layout_columnSpan="3"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:layout_gravity="top"
+        android:id="@+id/blueOneBar"
+        android:layout_height="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:foregroundTint="@android:color/holo_blue_light"
+        android:foregroundTintMode="multiply"
+        android:max="15"
+        android:minHeight="15dp"
+        android:progress="0"
+        android:progressTint="@android:color/holo_blue_bright" />
+    <TextView
+        android:layout_columnSpan="1"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_gravity="top"
+        android:id="@+id/redOneProgressText"
+        android:layout_height="15dp"
+        android:layout_margin="5dp"
+        android:textColor="@android:color/white" />
+    <SeekBar
+        android:layout_width="250dp"
+        android:layout_columnSpan="3"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:layout_gravity="top"
+        android:id="@+id/redOneBar"
+        android:layout_height="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:foregroundTint="@android:color/holo_red_light"
+        android:foregroundTintMode="multiply"
+        android:max="15"
+        android:minHeight="15dp"
+        android:progress="0"
+        android:progressTint="@android:color/holo_red_light" />
+    
+
+
+    <TextView
+        android:layout_columnSpan="4"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:layout_gravity="top"
+        android:id="@+id/firstFloor"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_margin="5dp"
+        android:text="@string/first_floor"
+        android:textColor="@android:color/white" />
+    
+    <TextView
+        android:layout_columnSpan="1"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_gravity="top"
+        android:id="@+id/whiteTwoProgressText"
+        android:layout_height="15dp"
+        android:layout_margin="5dp"
+        android:minWidth="60dp"
+        android:textColor="@android:color/white" />
+    <SeekBar
+        android:layout_width="250dp"
+        android:layout_columnSpan="3"
+        android:layout_row="5"
+        android:layout_column="1"
+        android:layout_gravity="top"
+        android:id="@+id/whiteTwoBar"
+        android:layout_height="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:foregroundTintMode="multiply"
+        android:max="15"
+        android:minHeight="15dp"
+        android:progress="0"
+        android:progressTint="@android:color/white" />
+    <TextView
+        android:layout_columnSpan="1"
+        android:layout_row="6"
+        android:layout_column="0"
+        android:layout_gravity="top"
+        android:id="@+id/blueTwoProgressText"
+        android:layout_height="15dp"
+        android:layout_margin="5dp"
+        android:textColor="@android:color/white" />
+    <SeekBar
+        android:layout_width="250dp"
+        android:layout_columnSpan="3"
+        android:layout_row="6"
+        android:layout_column="1"
+        android:layout_gravity="top"
+        android:id="@+id/blueTwoBar"
+        android:layout_height="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:foregroundTint="@android:color/holo_blue_light"
+        android:foregroundTintMode="multiply"
+        android:max="15"
+        android:minHeight="15dp"
+        android:progress="0"
+        android:progressTint="@android:color/holo_blue_bright" />
+    <TextView
+        android:layout_columnSpan="1"
+        android:layout_row="7"
+        android:layout_column="0"
+        android:layout_gravity="top"
+        android:id="@+id/redTwoProgressText"
+        android:layout_height="15dp"
+        android:layout_margin="5dp"
+        android:textColor="@android:color/white" />
+    <SeekBar
+        android:layout_width="250dp"
+        android:layout_columnSpan="3"
+        android:layout_row="7"
+        android:layout_column="1"
+        android:layout_gravity="top"
+        android:id="@+id/redTwoBar"
+        android:layout_height="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:foregroundTint="@android:color/holo_red_light"
+        android:foregroundTintMode="multiply"
+        android:max="15"
+        android:minHeight="15dp"
+        android:progress="0"
+        android:progressTint="@android:color/holo_red_light" />
+
+    
+    
+    
+    
+    <TextView
+        android:id="@+id/txtAlarm"
+        android:layout_columnSpan="3"
+        android:layout_row="8"
+        android:layout_column="0"
+        android:layout_gravity="left"
+        android:layout_height="20dp"
+        android:layout_width="250dp"
+        android:layout_margin="5dp"
+        android:textColor="@android:color/white" />
+    <TextView
+        android:id="@+id/txtTemperature"
+        android:layout_columnSpan="1"
+        android:layout_row="8"
+        android:layout_column="3"
+        android:layout_gravity="center"
+        android:layout_height="20dp"
+        android:minWidth="40dp"
+        android:layout_margin="5dp"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/txtGarage"
+        android:layout_columnSpan="3"
+        android:layout_row="9"
+        android:layout_column="0"
+        android:layout_gravity="left"
+        android:layout_height="20dp"
+        android:layout_width="250dp"
+        android:layout_margin="5dp"
+        android:text="garage"
+        android:textColor="@android:color/white" />
+    <TextView
+        android:id="@+id/txtHumidity"
+        android:layout_columnSpan="1"
+        android:layout_row="9"
+        android:layout_column="3"
+        android:layout_gravity="center"
+        android:layout_height="20dp"
+        android:minWidth="40dp"
+        android:layout_margin="5dp"
+        android:textColor="@android:color/white" />
+
+   
+
+    
+    <android.support.v7.widget.SwitchCompat
+        android:layout_columnSpan="1"
+        android:layout_row="10"
+        android:layout_column="3"
+        android:id="@+id/switchSecurity"
+        android:layout_height="15dp"
+        android:layout_gravity="fill"
+        android:enabled="false"
+        android:text="@string/security" />
+    <android.support.v7.widget.SwitchCompat
+        android:layout_columnSpan="1"
+        android:layout_row="11"
+        android:layout_column="3"
+        android:id="@+id/switchPIR"
+        android:layout_height="15dp"
+        android:layout_gravity="fill"
+        android:enabled="false"
+        android:text="@string/pir" />
+    <android.support.v7.widget.SwitchCompat
+        android:layout_columnSpan="1"
+        android:layout_row="12"
+        android:layout_column="3"
+        android:id="@+id/switchLaser"
+        android:layout_height="15dp"
+        android:layout_gravity="fill"
+        android:enabled="false"
+        android:text="@string/laser" />
+    <android.support.v7.widget.SwitchCompat
+        android:layout_columnSpan="1"
+        android:layout_row="13"
+        android:layout_column="3"
+        android:id="@+id/switchDoor"
+        android:layout_height="15dp"
+        android:layout_gravity="fill"
+        android:enabled="false"
+        android:text="@string/door" />
+    <Button
+        android:layout_columnSpan="1"
+        android:layout_row="14"
+        android:layout_column="3"
+        android:id="@+id/btnG"
+        android:layout_height="60dp"
+        android:layout_rowSpan="4"
+        android:layout_gravity="fill"
+        android:enabled="false"
+        android:text="@string/garage" />
+    
+    
+    
+    
+    <Button
+        android:layout_rowSpan="2"
+        android:layout_row="10"
+        android:layout_column="0"
+        android:id="@+id/btn01"
+        android:layout_height="60dp"
+        android:contentDescription="@string/_00"
+        android:scaleType="fitXY"
+        android:text="@string/_1"
+        android:textSize="18sp"
+        tools:text="1" />
+    <Button
+        android:layout_rowSpan="2"
+        android:layout_row="10"
+        android:layout_column="1"
+        android:id="@+id/btn02"
+        android:layout_height="60dp"
+        android:contentDescription="@string/_01"
+        android:scaleType="fitXY"
+        android:text="@string/_2"
+        android:textSize="18sp"
+        tools:text="2" />
+    <Button
+        android:layout_rowSpan="2"
+        android:layout_row="10"
+        android:layout_column="2"
+        android:id="@+id/btn03"
+        android:layout_height="60dp"
+        android:contentDescription="@string/_01"
+        android:scaleType="fitXY"
+        android:text="@string/_3"
+        android:textSize="18sp"
+        tools:text="3" />
+
+    
+    <Button
+        android:layout_rowSpan="2"
+        android:layout_row="12"
+        android:layout_column="0"
+        android:id="@+id/btn04"
+        android:layout_height="60dp"
+        android:contentDescription="@string/_00"
+        android:scaleType="fitXY"
+        android:layout_gravity="fill_vertical"
+        android:text="@string/_4"
+        android:textSize="18sp"
+        tools:text="4" />
+    <Button
+        android:layout_rowSpan="2"
+        android:layout_row="12"
+        android:layout_column="1"
+        android:id="@+id/btn05"
+        android:layout_height="60dp"
+        android:contentDescription="@string/_01"
+        android:scaleType="fitXY"
+        android:text="@string/_5"
+        android:textSize="18sp"
+        tools:text="5" />
+    <Button
+        android:layout_rowSpan="2"
+        android:layout_row="12"
+        android:layout_column="2"
+        android:id="@+id/btn06"
+        android:layout_height="60dp"
+        android:contentDescription="@string/_01"
+        android:scaleType="fitXY"
+        android:text="@string/_6"
+        android:textSize="18sp"
+        tools:text="6" />
+
+    
+    
+    <Button
+        android:layout_rowSpan="2"
+        android:layout_row="14"
+        android:layout_column="0"
+        android:id="@+id/btn07"
+        android:layout_height="60dp"
+        android:contentDescription="@string/_00"
+        android:scaleType="fitXY"
+        android:text="@string/_7"
+        android:textSize="18sp"
+        tools:text="7" />
+    <Button
+        android:layout_rowSpan="2"
+        android:layout_row="14"
+        android:layout_column="1"
+        android:id="@+id/btn09"
+        android:layout_height="60dp"
+        android:contentDescription="@string/_01"
+        android:scaleType="fitXY"
+        android:text="@string/_9"
+        android:textSize="18sp"
+        tools:text="9" />
+    <Button
+        android:layout_rowSpan="2"
+        android:layout_row="14"
+        android:layout_column="2"
+        android:id="@+id/btn08"
+        android:layout_height="60dp"
+        android:contentDescription="@string/_01"
+        android:scaleType="fitXY"
+        android:text="@string/_8"
+        android:textSize="18sp"
+        tools:text="8" />
+
+    
+    <Button
+        android:layout_rowSpan="2"
+        android:layout_row="16"
+        android:layout_column="0"
+        android:id="@+id/btnStar"
+        android:layout_height="60dp"
+        android:contentDescription="@string/star"
+        android:scaleType="fitXY"
+        android:text="@string/star"
+        android:textSize="18sp"
+        tools:text="*" />
+
+    <Button
+        android:layout_rowSpan="2"
+        android:layout_row="16"
+        android:layout_column="1"
+        android:id="@+id/btn00"
+        android:layout_height="60dp"
+        android:contentDescription="@string/_0"
+        android:scaleType="fitXY"
+        android:text="@string/_0"
+        android:textSize="18sp"
+        tools:text="0" />
+
+    <Button
+        android:layout_rowSpan="2"
+        android:layout_row="16"
+        android:layout_column="2"
+        android:id="@+id/btnPound"
+        android:layout_height="60dp"
+        android:contentDescription="@string/pound"
+        android:scaleType="fitXY"
+        android:text="@string/pound"
+        android:textSize="18sp"
+        tools:text="#" />
+    ...
+</GridLayout>
